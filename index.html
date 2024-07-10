@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon-32x32.png">
+  <title>Frontend Mentor | Interactive Card Details Form</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <script src="./assets/js/script.js" defer></script>
+</head>
+
+<body>
+
+  <main>
+
+    <section class="cards">
+      <div class="cards__content">
+        <div class="card__front">
+          <div class="card__front__logo">
+            <img src="./assets/img/card-logo.svg" alt="">
+          </div>
+          <div class="card__front__details">
+            <h1 id="card-number">0000 0000 0000 0000</h1>
+            <div class="card__front__info">
+              <p id="card-name">Jane Appleseed</p>
+              <p id="card-date"> <span id="month-date">00</span>/<span id="year-date">00</span> </p>
+            </div>
+          </div>
+        </div>
+        <div class="card__back">
+          <p id="card-cvc">000</p>
+        </div>  
+      </div>
+    </section>
+
+    <section class="card__form">
+      <form action="" id="form">
+        <div class="card__form__name card__content">
+          <label for="">Cardholder Name</label>
+          <input id="input-name" type="text" placeholder="e.g. Jane Appleseed" maxlength="25">
+          <small></small>
+        </div>
+        <div class="card__form__number card__content">
+          <label for="">Card Number</label>
+          <input id="input-number"  type="text" placeholder="e.g. 1234 5678 9123 0000" maxlength="16">
+          <small></small>
+        </div>
+        <div class="card__form__information">
+          <div class="card__form__date">
+            <label for="">Exp. Date (MM/YY)</label>
+            <div class="card__form__date__input">
+              <div>
+                <input id="input-month" class="input__information" type="text" placeholder="MM" maxlength="2">
+                <small></small>
+              </div>
+              <div>
+                <input id="input-year" class="input__information" type="text" placeholder="YY" maxlength="2">
+                <small></small>
+              </div>  
+            </div>
+          </div>
+          <div class="card__form__cvc">
+            <label for="">CVC</label>
+            <input id="input-cvc"  class="input__cvc" type="text" placeholder="e.g. 123" maxlength="3"> 
+            <small></small>
+          </div>
+        </div>
+        <div>
+          <button class="btn" id="btnSubmit" type="submit">Confirm</button>
+        </div>
+      </form>
+
+      <div class="complete__message" id="completeMessage">
+        <div class="check">
+          <span>&#10003</span>
+        </div>
+        <h2>Thank You!</h2>
+        <p>We've added your card details</p>
+        <button class="btn" id="btnContinue" type="submit">Continue</button>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="rodape">
+    <section class="rodape__content">
+      <div class="attribution">
+        <p>Desenvolvido por <a href="https://github.com/grasieletinoco" target="_blank" title="GitHub"> Grasiele Tinoco</a> - Challenge by Frontend Mentor</p>
+      </div>  
+    </section>
+  </footer>
+
+</body>
+</html>
